@@ -1,3 +1,5 @@
 default: styles/application.scss
 contrast: styles/contrast.scss
 mastodon-light: styles/mastodon-light.scss
+stella-oriented: styles/stella-oriented.scss
+stella-oriented-dark: styles/stella-oriented-dark.scss

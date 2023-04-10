@@ -1,0 +1,175 @@
+body {
+	font-family: 'HBIOS-SYS', 'mastodon-font-sans-serif', sans-serif;
+}
+
+.column-link {
+  background: $ui-base-color;
+  color: $primary-text-color;
+  font-family: 'HBIOS-SYS', sans-serif;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: lighten($ui-base-color, 11%);
+  }
+
+  &--transparent {
+    background: transparent;
+    color: lighten($ui-primary-color, 3%);
+
+    &:hover {
+	    background: transparent;
+	    color: $ui-base-lighter-color;
+    }
+
+    &:focus{
+      background: transparent;
+      color: $primary-text-color;
+    }
+
+    &:active {
+	    color: $classic-highlight-color;
+    }
+
+    &.active {
+      color: $classic-highlight-color;
+    }
+  }
+
+  &--logo {
+    background: transparent;
+    padding: 10px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: transparent;
+    }
+  }
+}
+
+a.mention,
+a.status-link,
+strong.navigation-bar__profile-account,
+.status__content a.unhandled-link {
+	color: $gold-star;
+}
+
+.emoji-mart {
+	color: $primary-text-color;
+}
+
+.compose-form{
+	.spoiler-input__input,
+	.autosuggest-textarea__textarea {
+		color: lighten($primary-text-color, 10%);
+	}
+}
+
+.icon-with-badge {
+	&__badge {
+		background: $classic-highlight-color;
+		color: $white;
+	}
+}
+
+.filters-list,
+.announcements-list{
+	&__item{
+		&__title{
+			color: $primary-text-color;
+		}
+	}
+}
+
+.permissions-list__item__text__title{
+	color: $classic-highlight-color;
+}
+
+.log-entry{
+	font-size: 15px;
+	&__title{
+		.username{
+			color: $classic-highlight-color;
+		}
+
+		a{
+			color: $gold-star;
+		}
+	}
+}
+
+.flash-message{
+	&.notice{
+		border: 1px solid rgba($ui-base-lighter-color, 0.25);
+		background: lighten($ui-base-lighter-color, 15%);
+		color: $ui-base-lighter-color; // #df99f7;
+		font-size: 14px;
+	}
+}
+
+.notification__filter_bar{
+	button.active {
+		color: $ui-highlight-color;
+	}
+}
+
+.status__content .emojione {
+    --emoji-size: 1.5em;
+    width: var(--emoji-size, 36px) !important;
+    height: var(--emoji-size, 36px) !important;
+    font-size: var(--emoji-size, 36px) !important;
+    transition: transform .2s ease;
+    
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.compose-form .compose-form__buttons-wrapper {
+	background: darken($simple-background-color, 2%);
+	border-radius: 0 0 0 0;
+}
+
+.compose-panel .compose-form__autosuggest-wrapper{
+	background-color: $simple-background-color;
+}
+
+.privacy-dropdown__dropdown {
+	background: $classic-secondary-color !important;
+}
+
+.reply-indicator{
+	background: darken($classic-highlight-color, 10%) !important;
+}
+
+.confirmational-modal, .confirmation-modal__container, .block-modal, .block-modal__container {
+	color: $primary-text-color;
+}
+
+.block-modal__action-bar{
+	background: $classic-highlight-color;
+}
+
+.poll__option input[type="text"],
+section.emoji-mart-search > input,
+.confirmation-modal__cancel-button{
+	color: lighten($classic-highlight-color, 30%);
+}
+
+//button gradient
+.button{
+	&.button--block{
+		background: $classic-highlight-color;
+		color: #ccc;
+	}
+	&.button-tertiary, &.button-secondary{
+		border: none;
+	}
+	color: lighten($primary-text-color, 30%)
+}
+
+.admin-wrapper .sidebar ul .simple-navigation-active-leaf a,
+.simple_form button{
+	color: lighten($primary-text-color, 30%);
+}
